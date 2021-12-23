@@ -32,8 +32,7 @@ class TrainersScreenView extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Text(studentMockList[index].name ?? 'no name'),
-          Text("point " + studentMockList[index].points.toString() ??
-              'no point'),
+          Text("point " + studentMockList[index].points.toString()),
         ],
       ),
     );
