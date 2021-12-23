@@ -28,7 +28,14 @@ class TrainersScreenView extends StatelessWidget {
           borderRadius: BorderRadius.all(
             Radius.circular(8),
           )),
-      child: Text(studentMockList[index].name ?? 'no name'),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Text(studentMockList[index].name ?? 'no name'),
+          Text("point " + studentMockList[index].points.toString() ??
+              'no point'),
+        ],
+      ),
     );
   }
 }
